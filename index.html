@@ -5,24 +5,44 @@
 	<meta charset="UTF-8">
 	<title>Joey Underwood Landing Page</title>
 	<link rel="stylesheet" type="text/css" href="https://joeyunderwood8.github.io/joeyunderwood.com/style.css">
+	
 </head>
 <body>
 	<section class="banner" id="sec">
 		<header>
-			<a href="#" class="logo">Logo</a>
-			<div id="toggle" onclick="toggle()"></div>
+			<a href="#" class="logo">
+				<img src="linkedin.png" alt="Image of me">
+			</a>
+			<div id="toggle" class="toggle-button" onclick="toggle()"></div>
+			<script>
+				function toggle() {
+					console.log('toggle called');
+					const toggleButton = document.querySelector('#toggle');
+					toggleButton.classList.toggle('toggle-button');
+					console.log(toggleButton);
+				}
+			</script>
 		</header>
+		<!--
 		<div class="content">
-			<h2>Hello World,<br>I'm <span>Joey Underwood</span></h2>
+			<h2>Hello World!!!,<br>I'm <span>Joey Underwood</span></h2>
 			<p> Coming Soon. Design looks alright?</p>
 			<a href="#">Link</a>
 		</div>
+		<div class="image-container">
+			<img src="linkedin.png" alt="Image">
+			<button class="close-button">X</button>
+		</div>
+		-->
+		  <!--
 		<ul class="sci">
 			<li><a href="#"><img src="linkedin.png"></a></li>
 			<li><a href="#"><img src="linkedin.png"></a></li>
 			<li><a href="#"><img src="linkedin.png"></a></li>
 		</ul>
+		-->
 	</section>
+	<!---
 	<div id="navigation">
 		<ul>
 			<li><a href="#">Home</a></li>
@@ -38,5 +58,6 @@
 			sec.classList.toggle('active')
 		}	
 	</script>
+	-->
 </body>
 </html>
